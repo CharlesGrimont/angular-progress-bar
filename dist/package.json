@@ -1,10 +1,15 @@
 {
   "name": "angular-progress-bar",
-  "version": "1.0.0-beta2",
+  "version": "1.0.0",
   "description": "An angular progress-bar",
   "main": "bundles/progress-bar.umd.js",
   "module": "src/index.js",
   "typings": "src/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharlesGrimont/angular-progress-bar.git"
+  },
+  "homepage": "https://github.com/CharlesGrimont/angular-progress-bar#readme",
   "keywords": [
     "angular",
     "angular2",
@@ -12,7 +17,14 @@
     "angular4",
     "angular5",
     "angular 5",
-    "progress bar"
+    "Ionic",
+    "Ionic 2",
+    "Ionic2",
+    "Ionic 3",
+    "Ionic3",
+    "progress bar",
+    "angular progress bar",
+    "ionic progress bar"
   ],
   "author": "Charles GRIMONT",
   "license": "MIT",
