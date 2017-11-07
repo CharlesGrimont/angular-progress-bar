@@ -1,0 +1,1 @@
+# Angular Progress bar component #
