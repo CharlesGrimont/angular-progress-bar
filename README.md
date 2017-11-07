@@ -22,4 +22,4 @@ Then you need to import it into your app modules
     </progress-bar>
 
 
-![alt text](./assets/angular-progress-bar.png)
+![alt text](https://github.com/CharlesGrimont/angular-progress-bar/blob/master/assets/angular-progress-bar.png?raw=true)
