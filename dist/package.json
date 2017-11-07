@@ -1,6 +1,6 @@
 {
   "name": "angular-progress-bar",
-  "version": "1.0.0",
+  "version": "1.0.0-beta2",
   "description": "An angular progress-bar",
   "main": "bundles/progress-bar.umd.js",
   "module": "src/index.js",
@@ -17,7 +17,6 @@
   "author": "Charles GRIMONT",
   "license": "MIT",
   "peerDependencies": {
-    "@angular/core": "^2.4.0 || ^4.0.0 || ^5.0.0",
-    "rxjs": "^5.0.1"
+    "@angular/core": "^2.4.0 || ^4.0.0 || ^5.0.0"
   }
 }

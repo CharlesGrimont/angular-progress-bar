@@ -3,3 +3,8 @@ node_modules/
 package-lock.json
 dist/src
 dist/bundles
+src/index.ngsummary.json
+src/progress-bar.module.ngfactory.ts
+src/progress-bar.module.ngsummary.json
+src/progress-bar/progress-bar.ngfactory.ts
+src/progress-bar/progress-bar.ngsummary.json
