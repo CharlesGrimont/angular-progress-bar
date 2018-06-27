@@ -1,6 +1,6 @@
 {
   "name": "angular-progress-bar",
-  "version": "1.0.0",
+  "version": "1.0.1-beta3",
   "description": "An angular progress-bar",
   "main": "bundles/progress-bar.umd.js",
   "module": "src/index.js",
@@ -30,5 +30,6 @@
   "license": "MIT",
   "peerDependencies": {
     "@angular/core": "^2.4.0 || ^4.0.0 || ^5.0.0"
-  }
+  },
+  "dependencies": {}
 }

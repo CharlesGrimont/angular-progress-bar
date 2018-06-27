@@ -30,7 +30,7 @@ import { Component, Input  } from '@angular/core';
     `],
     template:
         "<div class=\"progress-outer\">\n" +
-        "    <div class=\"progress-inner\" [style.width]=\"progress + '%'\" [style.background-color]=\"color != null ? color : '#488aff'\">\n" +
+        "    <div class=\"progress-inner\" [style.width]=\"progress + '%'\" [style.background-color]=\"degraded == null ? color : whichColor(progress)\">\n" +
         "        {{progress}}%\n" +
         "</div>\n" +
         "</div>"
@@ -42,8 +42,28 @@ export class ProgressBarComponent {
   /** Inputs **/
     @Input('progress') progress: string;
     @Input('color') color: string;
+    @Input('color-degraded') degraded: any;
+
 
   constructor() {
+    this.color = "#488aff";
+  }
 
+  /**
+   * Returns a color for a certains percent
+   * @param percent The current progress
+   */
+  whichColor(percent: string){
+    let keys = Object.keys(this.degraded).sort();
+    let last = keys[0];
+    for(let val of keys){
+      if(val < percent){
+        last = val;
+      }
+      else if(val > percent){
+        return this.degraded[last];
+      }
+    }
+    return this.degraded[last];
   }
 }

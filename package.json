@@ -1,6 +1,6 @@
 {
   "name": "angular-progress-bar",
-  "version": "1.0.0",
+  "version": "1.0.1-beta1",
   "description": "An angular progress-bar",
   "main": "index.js",
   "scripts": {
