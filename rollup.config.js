@@ -1,6 +1,6 @@
 export default {
-  entry: 'dist/src/index.js',
-  dest: 'dist/bundles/progress-bar.umd.js',
+  entry: 'src/index.ts',
+  dest: 'bundles/progress-bar.umd.js',
   sourceMap: false,
   format: 'umd',
   moduleName: 'ng.progress-bar',
