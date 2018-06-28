@@ -1,8 +1,13 @@
 .idea/
 node_modules/
 package-lock.json
-dist/src
-dist/bundles
+src/**/*.js
+src/**/*.d.ts
+src/**/*.js.map
+src/*.module.js
+src/*.module.js.map
+src/**/*.metadata.json
+bundles
 src/index.ngsummary.json
 src/progress-bar.module.ngfactory.ts
 src/progress-bar.module.ngsummary.json
