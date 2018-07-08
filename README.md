@@ -9,6 +9,7 @@
 ## Toc
 - [Toc](#toc)
 - [Introduction](#introduction)
+- [Online demo](#online-demo)
 - [Appearance](#appearance)
   - [Basic](#basic)
   - [Grey](#grey)
@@ -23,6 +24,9 @@ Angular progress bar is a component available from Angular 2, 4, 5 and Ionic 2 a
 
 This component allow you to manage a progress visually
 
+## Online demo ##
+
+You can find a demo at https://angular-progress-bar-demo.stackblitz.io
 ## Appearance ##
 
 ### Basic ###
