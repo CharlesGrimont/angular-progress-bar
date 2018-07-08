@@ -54,7 +54,7 @@ import {ProgressBarModule} from "angular-progress-bar"
 
 ## How to use ##
 
-  ### Classic way ###
+### Classic way ###
 
 By this way, progress property will be the value show in the progress bar, and color property will be the color displayed
   
@@ -63,7 +63,7 @@ By this way, progress property will be the value show in the progress bar, and c
 </progress-bar>
 ```
 
-  ### Color degraded way ###
+### Color degraded way ###
 
 By this way, progress property will be the value show in the progress bar, but color-degraded property must be bined ton an object.
 
