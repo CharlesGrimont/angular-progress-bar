@@ -1,10 +1,13 @@
 {
   "name": "angular-progress-bar",
-  "version": "1.0.0",
+  "version": "1.0.3-beta11",
   "description": "An angular progress-bar",
-  "main": "index.js",
+  "main": "./dist/bundles/progress-bar.umd.js",
+  "module": "./dist/src/index.js",
+  "typings": "./dist/src/index.d.ts",
   "scripts": {
-    "transpile": "ngc",
+    "prepare": "npm run build",
+    "transpile": "tsc -p . && ngc",
     "package": "rollup -c",
     "minify": "uglifyjs dist/bundles/progress-bar.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/progress-bar.umd.min.js",
     "build": "npm run transpile && npm run package && npm run minify"
