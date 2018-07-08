@@ -30,8 +30,8 @@ import { Component, Input  } from '@angular/core';
     `],
     template:
         "<div class=\"progress-outer\">\n" +
-        "    <div class=\"progress-inner\" [style.width]=\"progress + '%'\" [style.background-color]=\"degraded == null ? color : whichColor(progress)\">\n" +
-        "        {{progress}}%\n" +
+        "    <div class=\"progress-inner\" [style.width]=\"whichProgress(progress) + '%'\" [style.background-color]=\"degraded == null ? color : whichColor(progress)\">\n" +
+        "        {{whichProgress(progress)}}%\n" +
         "</div>\n" +
         "</div>"
 
@@ -78,5 +78,14 @@ export class ProgressBarComponent {
     }
     // if its the last one retrun the last
     return this.degraded[last];
+  }
+
+  whichProgress(progress: number){
+    try{
+      return Math.round(progress * 100) / 100;
+    }
+    catch{
+      return progress;
+    }
   }
 }

@@ -9,11 +9,14 @@
 ## Toc
 - [Toc](#toc)
 - [Introduction](#introduction)
-- [Basic Appearance](#basic-appearance)
+- [Online demo](#online-demo)
+- [Appearance](#appearance)
+  - [Basic](#basic)
+  - [Grey](#grey)
 - [Installation](#installation)
 - [How to use](#how-to-use)
-    - [Classic way](#classic-way)
-    - [Color degraded way](#color-degraded-way)
+  - [Classic way](#classic-way)
+  - [Color degraded way](#color-degraded-way)
 
 ## Introduction ##
 
@@ -21,8 +24,16 @@ Angular progress bar is a component available from Angular 2, 4, 5 and Ionic 2 a
 
 This component allow you to manage a progress visually
 
-## Basic Appearance ##
+## Online demo ##
+
+You can find a demo at https://angular-progress-bar-demo.stackblitz.io
+## Appearance ##
+
+### Basic ###
   <img src="./assets/angular-progress-bar.png?raw=true" alt="Appearence">
+
+### Grey ###
+  <img src="./assets/angular-progress-bar-50.PNG?raw=true" alt="Appearence">
   
 ## Installation ##
 
@@ -46,15 +57,18 @@ import {ProgressBarModule} from "angular-progress-bar"
           
 
 ## How to use ##
-  ### Classic way
+
+### Classic way ###
+
 By this way, progress property will be the value show in the progress bar, and color property will be the color displayed
   
 ```html
-<progress-bar [progress]="100" [color]="#488aff">
+<progress-bar [progress]="100" [color]="'#488aff'">
 </progress-bar>
 ```
 
-  ### Color degraded way
+### Color degraded way ###
+
 By this way, progress property will be the value show in the progress bar, but color-degraded property must be bined ton an object.
 
 This object, must containes a key value made be a string that represent a percent, and the value must be an hexadecimal color

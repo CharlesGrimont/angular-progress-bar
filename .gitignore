@@ -13,3 +13,4 @@ src/progress-bar.module.ngfactory.ts
 src/progress-bar.module.ngsummary.json
 src/progress-bar/progress-bar.ngfactory.ts
 src/progress-bar/progress-bar.ngsummary.json
+bundles/
