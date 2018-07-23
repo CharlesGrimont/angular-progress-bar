@@ -20,7 +20,7 @@
 
 ## Introduction ##
 
-Angular progress bar is a component available from Angular 2, 4, 5 and Ionic 2 and 3.
+Angular progress bar is a component available from Angular 2, 4, 5, 6 and Ionic 2 and 3.
 
 This component allow you to manage a progress visually
 
