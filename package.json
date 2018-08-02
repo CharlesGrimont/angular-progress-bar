@@ -1,23 +1,9 @@
 {
   "name": "angular-progress-bar",
-  "version": "1.0.3",
+  "version": "1.0.4-beta13",
   "description": "An angular progress-bar",
-  "main": "./dist/bundles/progress-bar.umd.js",
-  "module": "./dist/src/index.js",
-  "typings": "./dist/src/index.d.ts",
-  "scripts": {
-    "prepare": "npm run build",
-    "transpile": "tsc -p . && ngc",
-    "package": "rollup -c",
-    "minify": "uglifyjs bundles/progress-bar.umd.js --screw-ie8 --compress --mangle --comments --output bundles/progress-bar.umd.min.js",
-    "build": "npm run transpile && npm run package && npm run minify"
-  },
   "author": "Charles GRIMONT",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CharlesGrimont/angular-progress-bar.git"
-  },
   "homepage": "https://github.com/CharlesGrimont/angular-progress-bar#readme",
   "keywords": [
     "angular",
@@ -35,14 +21,8 @@
     "angular progress bar",
     "ionic progress bar"
   ],
-  "devDependencies": {
-    "@angular/compiler": "4.4.4",
-    "@angular/compiler-cli": "4.4.4",
-    "@angular/core": "4.4.4",
-    "rxjs": "^5.0.1",
-    "zone.js": "^0.8.4",
-    "rollup": "^0.50.0",
-    "typescript": "^2.6.1",
-    "uglify-js": "^3.1.8"
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
   }
 }
