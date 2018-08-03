@@ -8,28 +8,27 @@ import { Component, Input } from '@angular/core';
           width: 96%;
           margin: 10px 2%;
           padding: 3px;
-          text-align: center;
           background-color: #f4f4f4;
           border: 1px solid #dcdcdc;
           color: #fff;
           border-radius: 20px;
+          text-align: center;
         }
         .progress-inner {
           min-width: 15%;
           white-space: nowrap;
           overflow: hidden;
-          padding: 5px;
+          padding: 0px;
           border-radius: 20px;
-        }
   `],
   template:
-      "<div class=\"progress-outer\">\n" +
-      "    <div class=\"progress-inner\" [style.width]=\"whichProgress(progress) + '%'\" [style.background-color]=\"degraded == null ? color : whichColor(progress)\">\n" +
-      "        {{whichProgress(progress)}}%\n" +
-      "</div>\n" +
-      "</div>"
-
-
+  `
+  <div ngclass=\"progress-outer\">
+    <div class=\"progress-inner\" [style.width]=\"whichProgress(progress) + '%'\" [style.background-color]=\"degraded == null ? color : whichColor(progress)\">
+      {{whichProgress(progress)}}%
+    </div>
+  </div>
+  `
 })
 export class ProgressBarComponent {
 
@@ -45,7 +44,7 @@ constructor() {
 }
 
 /**
- * Returns a color for a certains percent
+ * Returns a color for a certain percent
  * @param percent The current progress
  */
 whichColor(percent: string){
@@ -57,7 +56,7 @@ whichColor(percent: string){
   k = k.sort((a, b) => a - b);
   // Percent as number
   let p = +percent
-  // Set last by default as the first occurence
+  // Set last by default as the first occurrence
   let last = k[0];
   // Foreach keys 
   for(let val of k){
@@ -70,7 +69,7 @@ whichColor(percent: string){
       return this.degraded[last];
     }
   }
-  // if its the last one retrun the last
+  // if its the last one return the last
   return this.degraded[last];
 }
 
