@@ -21,10 +21,11 @@ import { Component, Input } from '@angular/core';
         padding: 0px;
         border-radius: 20px;
 `],
+
 template:
     "<div class=\"progress-outer\">\n" +
-    "    <div class=\"progress-inner\" [style.width]=\"progress + '%'\" [style.background-color]=\"color != null ? color : '#488aff'\">\n" +
-    "        {{progress}}%\n" +
+    "    <div class=\"progress-inner\" [style.width]=\"whichProgress(progress) + '%'\" [style.background-color]=\"degraded == null ? color : whichColor(progress)\">\n" +
+    "        {{whichProgress(progress)}}%\n" +
     "</div>\n" +
     "</div>"
 
