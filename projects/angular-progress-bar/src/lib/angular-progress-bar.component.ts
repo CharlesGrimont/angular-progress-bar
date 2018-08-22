@@ -3,32 +3,32 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector:
       'progress-bar',
-  styles: [`
-        .progress-outer {
-          width: 96%;
-          margin: 10px 2%;
-          padding: 3px;
-          background-color: #f4f4f4;
-          border: 1px solid #dcdcdc;
-          color: #fff;
-          border-radius: 20px;
-          text-align: center;
-        }
-        .progress-inner {
-          min-width: 15%;
-          white-space: nowrap;
-          overflow: hidden;
-          padding: 0px;
-          border-radius: 20px;
-  `],
-  template:
-  `
-  <div ngclass=\"progress-outer\">
-    <div class=\"progress-inner\" [style.width]=\"whichProgress(progress) + '%'\" [style.background-color]=\"degraded == null ? color : whichColor(progress)\">
-      {{whichProgress(progress)}}%
-    </div>
-  </div>
-  `
+      styles: [`
+      .progress-outer {
+        width: 96%;
+        margin: 10px 2%;
+        padding: 3px;
+        background-color: #f4f4f4;
+        border: 1px solid #dcdcdc;
+        color: #fff;
+        border-radius: 20px;
+        text-align: center;
+      }
+      .progress-inner {
+        min-width: 15%;
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 0px;
+        border-radius: 20px;
+`],
+template:
+    "<div class=\"progress-outer\">\n" +
+    "    <div class=\"progress-inner\" [style.width]=\"progress + '%'\" [style.background-color]=\"color != null ? color : '#488aff'\">\n" +
+    "        {{progress}}%\n" +
+    "</div>\n" +
+    "</div>"
+
+
 })
 export class ProgressBarComponent {
 
