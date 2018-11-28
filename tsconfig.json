@@ -25,5 +25,8 @@
         "dist/angular-progress-bar/*"
       ]
     }
+  },
+  "angularCompilerOptions": {
+    "enableIvy": true
   }
 }
