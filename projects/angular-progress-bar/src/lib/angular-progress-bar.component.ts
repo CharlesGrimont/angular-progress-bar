@@ -23,7 +23,7 @@ import { Component, Input } from '@angular/core';
   `],
   template:
   `
-  <div ngclass=\"progress-outer\">
+  <div class=\"progress-outer\">
     <div class=\"progress-inner\" [style.width]=\"whichProgress(progress) + '%'\" [style.background-color]=\"degraded == null ? color : whichColor(progress)\">
       {{whichProgress(progress)}}%
     </div>
