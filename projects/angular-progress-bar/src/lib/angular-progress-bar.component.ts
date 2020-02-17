@@ -16,6 +16,7 @@ import { Component, Input } from '@angular/core';
         }
         .progress-inner {
           min-width: 15%;
+          min-height:18px;
           white-space: nowrap;
           overflow: hidden;
           padding: 0px;
@@ -25,7 +26,12 @@ import { Component, Input } from '@angular/core';
   `
   <div class=\"progress-outer\">
     <div class=\"progress-inner\" [style.width]=\"whichProgress(progress) + '%'\" [style.background-color]=\"degraded == null ? color : whichColor(progress)\">
-      {{whichProgress(progress)}}%
+      <ng-container *ngIf="!disabledP"> 
+        {{whichProgress(progress)}}%
+      </ng-container>
+      <ng-container *ngIf="disabledP"> 
+        {{whichProgress(progress)}}
+      </ng-container>
     </div>
   </div>
   `
@@ -36,11 +42,13 @@ export class ProgressBarComponent {
   @Input('progress') progress: string;
   @Input('color') color: string;
   @Input('color-degraded') degraded: any;
+  @Input('disable-percentage') disabledP: boolean;
 
 
 constructor() {
   // Default color
   this.color = "#488aff";
+  this.disabledP = false;
 }
 
 /**

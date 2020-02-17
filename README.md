@@ -17,6 +17,7 @@
 - [How to use](#how-to-use)
   - [Classic way](#classic-way)
   - [Color degraded way](#color-degraded-way)
+  - [Disable display of percentage](#disable-display-of-percentage)
 
 ## Introduction ##
 
@@ -69,13 +70,22 @@ By this way, progress property will be the value shown in the progress bar, and 
 
 ### Color degraded way ###
 
-By this way, progress property will be the value shown in the progress bar, but color-degraded property must be bined ton an object.
+By this way, progress property will be the value shown in the progress bar, but color-degraded property must be binded ton an object.
 
-This object, must containes a key value made be a string that represent a percent, and the value must be an hexadecimal color
+This object, must contains a key value made be a string that represent a percent, and the value must be an hexadecimal color
 
 in the example show below, from 0 to 15 percent the color will be #00cbcb then from 16 to 25 percent the color will be #f9c3d3 and then from 25 to the end the color will be #fd8c8e
 
 ```html
 <progress-bar [progress]="100" [color-degraded]="{'0': '#00cbcb',  '15': '#f9c3d3', '25': '#fd8c8e'}">
+</progress-bar>
+  ```
+
+### Disable display of percentage ###
+
+You can disable display of percentage by using disable-percentage property
+
+```html
+<progress-bar [progress]="80" [disable-percentage]="true">
 </progress-bar>
   ```

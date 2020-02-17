@@ -1,6 +1,6 @@
 {
   "name": "angular-progress-bar",
-  "version": "1.0.9",
+  "version": "1.0.11",
   "description": "An angular progress-bar",
   "author": "Charles GRIMONT",
   "license": "MIT",
@@ -20,7 +20,7 @@
     "progress bar",
     "angular progress bar",
     "ionic progress bar"
-  ],
+  ],  
   "peerDependencies": {
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0 || ^7.1.0",
     "@angular/core": "^6.0.0-rc.0 || ^6.0.0 || ^7.1.0"

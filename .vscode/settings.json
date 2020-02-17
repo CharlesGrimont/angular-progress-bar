@@ -1,5 +1,13 @@
 {
     "markdown.extension.toc.updateOnSave": true,
     "markdown.extension.toc.githubCompatibility": true,
-    "markdown.extension.preview.autoShowPreviewToSide": true
+    "markdown.extension.preview.autoShowPreviewToSide": true,
+    "spellright.language": [
+        "en"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ]
 }
